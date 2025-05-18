@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+
+#define int long long
+#define endl '\n'
+using namespace std;
+class Animal
+{
+    public: virtual void move() = 0;
+    virtual void eat() = 0;
+};
+class Dog: public Animal
+{
+    public: string breed;
+    Dog(string breed)
+    {
+        this -> breed = breed;
+    }
+    void move()
+    {
+        cout << "Moving:" << breed << endl;
+    }
+    void eat()
+    {
+        cout << "Eating" << endl;
+    }
+};
+signed main()
+{
+    Animal * dog = new Dog("german-shepherd");
+    dog -> move();
+    dog -> eat();
+}
