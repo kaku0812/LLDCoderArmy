@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+#define int long long
+#define endl '\n'
+using namespace std;
+class Human
+{
+    public:
+    void travel()
+    {
+        cout<<"Walking"<<endl;
+    }
+};
+class Man:public Human
+{
+    public:
+    void travel()
+    {
+        cout<<"Man is walking"<<endl;
+    }
+};
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+Human *man= new Man();
+man->travel();
+Man m;
+m.travel();
+Human *h= new Human();
+h->travel();
+    
+}
