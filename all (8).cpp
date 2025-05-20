@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#define int long long
+#define endl '\n'
+using namespace std;
+class Human
+{
+    public:
+    void travel()
+    {
+        cout<<"Walking"<<endl;
+    }
+    void travel(string vehicle)
+    {
+        cout<<"Go by:"<<vehicle<<endl;
+    }
+};
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+   Human h;
+   h.travel();
+   h.travel("Bus");
+    
+}
